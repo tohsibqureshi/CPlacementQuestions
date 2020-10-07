@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">C Placement Questions</string>
+
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="nextBtn">Next</string>
+    <string name="lastBtn">Last</string>
+    <string name="view_button">View Answer</string>
+    <string name="ad_unit_id">ca-app-pub-7999746664510701/2525329752</string>
+    <string name="ad_app_id">ca-app-pub-7999746664510701~8814625682</string>
+</resources>

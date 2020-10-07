@@ -1,0 +1,932 @@
+[
+  {
+    "question": "Que 1. #include<stdio.h>\n\nmain() \n{ \n   int a = 1; \n   float b = 1.3; \n   double c;\n   \n   c = a + b; \n   printf(\"%.2lf\", c);\n}",
+    "op1": "a)2.30",
+    "op2": "b)2.3",
+    "op3": "c)Compile error",
+    "op4": "d)2.0",
+    "ans": "Ans a . 2.30, addition is valid and after decimal with is specified for 2 places. "
+  },
+  {
+    "question": "Que 2.Which of the following function sets first n characters of a string to a given character? ",
+    "op1": "a)strinit()",
+    "op2": "b)strnset()",
+    "op3": "c)strset()",
+    "op4": "d)strcset()",
+    "ans": "Ans b . Explanation:\n\nDeclaration:\n\nchar *strnset(char *s, int ch, size_t n); Sets the first n characters of s to ch\n\n#include <stdio.h>\n#include <string.h>\n\nint main(void)\n{\n   char *string = \"abcdefghijklmnopqrstuvwxyz\";\n   char letter = 'x';\n\n   printf(\"string before strnset: %s\\n\", string);\n   strnset(string, letter, 13);\n   printf(\"string after  strnset: %s\\n\", string);\n\n   return 0;\n}\nOutput:\n\nstring before strnset: abcdefghijklmnopqrstuvwxyz\n\nstring after strnset: xxxxxxxxxxxxxnopqrstuvwxyz "
+  },
+  {
+    "question": "Que 3. #include<stdio.h>\n\nmain()\n{\n   int i = 1;\n   \n   while( i++<=5 )\n      printf(\"%d \",i++);\n}",
+    "op1": "a) 1 3 5",
+    "op2": "b) 2 4",
+    "op3": "c) 2 4 6",
+    "op4": "d) 2",
+    "ans": "Ans c . 2 4 6, at while first compared and later incremented and in printf printed first and incremented later. "
+  },
+  {
+    "question": "Que 4. How will you print \\n on the screen?",
+    "op1": "a)printf(\"\\n\");",
+    "op2": "b)echo \"\\\\n\";",
+    "op3": "c)printf('\\n');",
+    "op4": "d)printf(\"\\\\n\");",
+    "ans": "Ans d . The statement printf(\"\\\\n\"); prints '\\n' on the screen. "
+  },
+  {
+    "question": "Que 5. Function fopen() with the mode \"r+\" tries to open the file for __",
+    "op1": "a)reading and writing",
+    "op2": "b)reading and adding new content",
+    "op3": "c)only for reading",
+    "op4": "d)it works only for directories",
+    "ans": "Ans a . The file should exist and opens for both reading & writing. "
+  },
+  {
+    "question": "Que 6. What are the types of linkages?",
+    "op1": "a)Internal and External",
+    "op2": "b)External, Internal and None",
+    "op3": "c)External and None",
+    "op4": "d)Internal",
+    "ans": "Ans b . External Linkage-> means global, non-static variables and functions.\nInternal Linkage-> means static variables and functions with file scope.\nNone Linkage-> means Local variables. "
+  },
+  {
+    "question": "Que 7. #include<stdio.h>\n\nmain()\n{\n   char s[] = \"Fine\";\n   *s = 'N';\n   \n   printf(\"%s\", s);\n}",
+    "op1": "a)Fine",
+    "op2": "b)Nine",
+    "op3": "c)Compile error",
+    "op4": "d)Runtime error",
+    "ans": "Ans b . *s=’N’, changes the character at base address to ‘N’. "
+  },{
+  "question": "Que 8. Is the following statement a declaration or definition?\nextern int i;",
+  "op1": "a)Declaration",
+  "op2": "b)Definition",
+  "op3": "c)Function",
+  "op4": "d)Error",
+  "ans": "Ans a . Declaring is the way a programmer tells the compiler to expect a particular type, be it a variable, class/struct/union type, a function type (prototype) or a particular object instance. (ie. extern int i)\n\nDeclaration never reserves any space for the variable or instance in the program's memory; it simply a \"hint\" to the compiler that a use of the variable or instance is expected in the program. This hinting is technically called \"forward reference\". "
+},
+  {
+    "question": "Que 9. #include<stdio.h>\n\nvoid main()\n{\n   char s[] = \"C++\";\n   \n   printf(\"%s \",s);\n   s++;\n   printf(\"%s\",s);\n}",
+    "op1": "a)C++ C++",
+    "op2": "b)C++ ++",
+    "op3": "c)++ ++",
+    "op4": "d)Compile error",
+    "ans": "Ans d . ‘s’ refers to a constant address and cannot be incremented. "
+  },
+  {
+    "question": "Que 10. When we mention the prototype of a function?",
+    "op1": "a)Defining",
+    "op2": "b)Declaring",
+    "op3": "c)Prototyping",
+    "op4": "d)Calling",
+    "ans": "Ans b . A function prototype in C or C++ is a declaration of a function that omits the function body but does specify the function's name, argument types and return type.\n\nWhile a function definition specifies what a function does, a function prototype can be thought of as specifying its interface. "
+  },
+  {
+    "question": "Que 11.  How to round-off a value “5.77” to 6.0?",
+    "op1": "a)ceil(5.77)",
+    "op2": "b)round-off(5.77)",
+    "op3": "c)round-up(5.77)",
+    "op4": "d)floor(5.77)",
+    "ans": "Ans a . ceil( ) function in C returns nearest integer value which is greater than or equal to the argument passed to thefunction.\n\n#include <math.h>\n#include <stdio.h>\n\n int main()\n{\n   float x=5.77;\n   printf(\"ceil of  %f is  %f\\n\", x, ceil(x));\n   return 0;\n} "
+  },
+  {
+    "question": "Que 12. Which of the following correctly represents a long double constant?",
+    "op1": "a)6.68",
+    "op2": "b)6.68L",
+    "op3": "c)6.68f",
+    "op4": "d)6.68LF",
+    "ans": "Ans b . 6.68 is double. \n6.68L is long double constant. \n6.68f is float constant. \n6.68LF is not allowed in c.  "
+  },
+  {
+    "question": "Que 13. Which of the following operator can be used to access value at address stored in a pointer variable?",
+    "op1": "a)*",
+    "op2": "b)#",
+    "op3": "c)&&",
+    "op4": "d)@",
+    "ans": "Ans a . Pointer operator,\n\n* (Value Operator) = Gives Value stored at Particular address\n\n& (Address Operator) = Gives Address of Variable "
+  },
+  {
+    "question": "Que 14. In C, if you pass an array as an argument to a function, what actually gets passed?",
+    "op1": "a)Value of elements in array",
+    "op2": "b)First element of the array",
+    "op3": "c)Base address of the array",
+    "op4": "d)Address of the last element of array",
+    "ans": "Ans c . The statement 'C' is correct. When we pass an array as a funtion argument, the base address of the array will be passed. "
+  },
+  {
+    "question": "Que 15. If the two strings are identical, then strcmp() function returns",
+    "op1": "a)-1",
+    "op2": "b)1",
+    "op3": "c)0",
+    "op4": "d)Yes",
+    "ans": "Ans c . Declaration: strcmp(const char *s1, const char*s2);\n\nThe strcmp return an int value that is\n\nif s1 < s2 returns a value < 0\n\nif s1 == s2 returns 0\n\nif s1 > s2 returns a value > 0 "
+  },
+  {
+    "question": "Que 16. What does the following declaration mean?\nint (*ptr)[10];",
+    "op1": "a)ptr is a pointer to an array of 10 integers",
+    "op2": "b)ptr is array of pointers to 10 integers",
+    "op3": "c)ptr is an array of 10 integers",
+    "op4": "d)ptr is an pointer to array",
+    "ans": "Ans a . No answer description available for this question. "
+  },
+  {
+    "question": "Que 17. Choose the correct order from given below options for the calling function of the code “a = f1(23, 14) * f2(12/4) + f3();”?",
+    "op1": "a)f1, f2, f3",
+    "op2": "b)f3, f2, f1",
+    "op3": "c)f2, f1, f3",
+    "op4": "d)Order may vary from one compiler to another",
+    "ans": "Ans d . Evaluation order is implementation dependent. "
+  },
+  {
+    "question": "Que 18. Which of the following is the correct order of evaluation for the below expression?\nz = x + y * z / 4 % 2 - 1",
+    "op1": "a)* / % + - =",
+    "op2": "b)= * / % + -",
+    "op3": "c)/ * % - + =",
+    "op4": "d)* % / - + =",
+    "ans": "Ans a . C uses left associativity for evaluating expressions to break a tie between two operators having same precedence. "
+  },
+  {
+    "question": "Que 19.  In the given below statement, what does the “arr” indicate?\n\n   char *arr[30];",
+    "op1": "a)arr is a array of function",
+    "op2": "b)arr is a array of 30 characters",
+    "op3": "c)arr is a pointer to an array",
+    "op4": "d)arr is a array of 30 character pointers",
+    "ans": "Ans d . square parenthesis signify as array at declaration and type is char*, so array of character pointers. "
+  },{
+  "question": "Que 20. What is the output of this C code?\n\nint main()\n{\nchar *p = NULL;\nchar *q = 0;\nif (p)\nprintf(\" p \");\nelse\nprintf(\"nullp\");\nif (q)\nprintf(\"q\\n\");\nelse\nprintf(\" nullq\\n\");\n}",
+  "op1": "a)nullp  nullq",
+  "op2": "b)Depends on the compiler",
+  "op3": "c)x nullq where x can be p or nullp depending ",
+  "op4": "d)p   q",
+  "ans": "Ans a . No answer description available for this question "
+},{
+  "question": "Que 21. What would happen if you create a file stdio.h and use #include \"stdio.h\" ?",
+  "op1": "a)The predefined library file will be selected",
+  "op2": "b)The user-defined library file will be selected",
+  "op3": "c)Both the files will be included",
+  "op4": "d)The compiler won’t accept the program",
+  "ans": "Ans b .  No answer description available for this question"
+},
+  {
+    "question": "Que 22. Address stored in the pointer variable is of type __________.",
+    "op1": "a)Character",
+    "op2": "b)Array",
+    "op3": "c)Floating",
+    "op4": "d)Integer",
+    "ans": "Ans d . Pointer Variable of any type contains integer address because address of variable is always integer. "
+  },
+  {
+    "question": "Que 23. Consider the 32 bit compiler. We need to store address of integer variable to integer pointer. What will be the size of integer pointer ?",
+    "op1": "a)10 Bytes",
+    "op2": "b)6 Bytes",
+    "op3": "c)4 Bytes",
+    "op4": "d)2 Bytes",
+    "ans": "Ans d . 32 bit compiler will take 2 bytes to store address of integer. "
+  },
+  {
+    "question": "Que 24. How many main() function we can have in our project?",
+    "op1": "a)1",
+    "op2": "b)2",
+    "op3": "c)No Limit",
+    "op4": "d)Depends on Compiler",
+    "ans": "Ans a . We can't have more than one main() function in a project. "
+  },
+  {
+    "question": "Que 25. Smallest element of an array is called as _______.",
+    "op1": "a)Middle Bound",
+    "op2": "b)Lower Bound",
+    "op3": "c)Upper Bound",
+    "op4": "d)Range",
+    "ans": "Ans b . No answer description available for this question "
+  },
+  {
+    "question": "Que 26. int x = 10;\n\nint main()\n{\n    int x = 0;\n    printf(\"%d\",x);\n    return 0;\n}",
+    "op1": "a)10",
+    "op2": "b)0",
+    "op3": "c)Compilation Error",
+    "op4": "d)Undefined",
+    "ans": "Ans b . It will print nearest values that is x =0. To print x=10; scope resolution operator :: should be used like printf(\"%d\", ::a) "
+  },
+  {
+    "question": "Que 27. What is the maximun number of dimensions an array in C may have?",
+    "op1": "a)Two",
+    "op2": "b)Eight",
+    "op3": "c)Twenty",
+    "op4": "d)Theoratically no limit. The only practical limits are memory size and compilers",
+    "ans": "Ans d . No answer description available for this question "
+  },
+  {
+    "question": "Que 28. What should be the output:\nvoid main()\n{ \n    int a = 10/3;\n    printf(\"%d\",a); \n}",
+    "op1": "a)3.3",
+    "op2": "b)3.0",
+    "op3": "c)3",
+    "op4": "d)0",
+    "ans": "Ans c . integer division ( int/ int ) is int only hence instead of printing 3.33 it will print 3 only. Float part is discarded in such cases. "
+  },
+  {
+    "question": "Que 29. The information about an array used in a program will be sorted in",
+    "op1": "a)Symbol table",
+    "op2": "b)Activation record",
+    "op3": "c)Both (a) and (b)",
+    "op4": "d)Dope vector",
+    "ans": "Ans d . No answer description available for this question "
+  },
+  {
+    "question": "Que 30. All keywords in C are in ____________",
+    "op1": "a)LowerCase letters",
+    "op2": "b)UpperCase letters",
+    "op3": "c)CamelCase letters",
+    "op4": "d)None of the mentioned",
+    "ans": "Ans a .  No answer description available for this question"
+  },  {
+    "question": "Que 31. What is the notation for following functions?\n\n1.  int f(int a, float b)\n    {\n        /* Some code */\n    }\n\n2.  int f(a, b)\n    int a; float b;\n    {\n        /* Some code */\n    }",
+    "op1": "a)1. KR Notation \n2. ANSI Notation",
+    "op2": "b)1. Pre ANSI C Notation \n2. KR Notation",
+    "op3": "c)1. ANSI Notation \n2. KR Notation",
+    "op4": "d)1. ANSI Notation \n2. Pre ANSI Notation",
+    "ans": "Ans c . KR Notation means Kernighan and Ritche Notation. "
+  },
+  {
+    "question": "Que 32. Which of the following is not a valid C variable name?",
+    "op1": "a)int number;",
+    "op2": "b)float rate;",
+    "op3": "c)int variable_count;",
+    "op4": "d)int $main;",
+    "ans": "Ans d . Since only underscore and no other special character is allowed in a variable name, it results in an error. "
+  },
+  {
+    "question": "Que 33. How many times the program will print \"Hello\" ?\n\n#include<stdio.h>\n\nint main()\n{\n    printf(\"Hello\");\n    main();\n    return 0;\n}",
+    "op1": "a)Infinite times",
+    "op2": "b)32767 times",
+    "op3": "c)65535 times",
+    "op4": "d)Till stack overflows",
+    "ans": "Ans d . No answer description available for this question "
+  },
+  {
+    "question": "Que 34. Property which allows to produce different executable for different platforms in C is called?",
+    "op1": "a)File inclusion",
+    "op2": "b)Selective inclusion",
+    "op3": "c)Conditional compilation",
+    "op4": "d)Recursive macros",
+    "ans": "Ans c . Conditional compilation is the preprocessor facility to produce different executable. "
+  },
+  {
+    "question": "Que 35. Point out the error in the program\n\n\nf(int a, int b)\n{\n    int a;\n    a = 20;\n    return a;\n}",
+    "op1": "a)Missing parenthesis in return statement",
+    "op2": "b)The function should be defined as int f(int a, int b)",
+    "op3": "c)Redeclaration of a",
+    "op4": "d)None of above",
+    "ans": "Ans c . f(int a, int b) The variable a is declared in the function argument statement.\n\nint a; Here again we are declaring the variable a. Hence it shows the error \"Redeclaration of a\" "
+  },
+  {
+    "question": "Que 36. What is a preprocessor?",
+    "op1": "a)That processes its input data to produce output that is used as input to another program",
+    "op2": "b)That is nothing but a loader",
+    "op3": "c)That links various source files",
+    "op4": "d)All of the mentioned",
+    "ans": "Ans a . A preprocessor is a program that processes its input data to produce output that is used as input to another program. "
+  },
+  {
+    "question": "Que 37. Which of the following statements are correct about the program?\n\n#include<stdio.h>\n\nint main()\n{\n    printf(\"%p\\n\", main());\n    return 0;\n}",
+    "op1": "a)It prints garbage values infinitely",
+    "op2": "b)Runs infinitely without printing anything",
+    "op3": "c)Error: main() cannot be called inside printf()",
+    "op4": "d)No Error and print nothing",
+    "ans": "Ans b . In printf(\"%p\\n\", main()); it calls the main() function and then it repeats infinetly, untill stack overflow. "
+  },
+  {
+    "question": "Que 38. What will be the output of the following C code?\n\n    #include <stdio.h>\n    int main()\n    {\n        while ()\n            printf(\"In while loop \");\n        printf(\"After loop\\n\");\n    }",
+    "op1": "a)In while loop after loop",
+    "op2": "b)After loop",
+    "op3": "c)Compile time error",
+    "op4": "d)Infinite loop",
+    "ans": "Ans c . No answer description available for this question"
+  },
+  {
+    "question": "Que 39. Which of the following statements are correct about the function?\n\nlong fun(int num)\n{\n    int i;\n    long f=1;\n    for(i=1; i<=num; i++)\n        f = f * i;\n    return f;\n}",
+    "op1": "a)The function calculates the value of 1 raised to power num.",
+    "op2": "b)The function calculates the square root of an integer",
+    "op3": "c)The function calculates the factorial value of an integer",
+    "op4": "d)None of above",
+    "ans": "Ans c . Yes, this function calculates and return the factorial value of an given integer num. "
+  },
+  {
+    "question": "Que 40. Which is correct with respect to the size of the data types?",
+    "op1": "a)char > int > float",
+    "op2": "b)int > char > float",
+    "op3": "c)char < int < double",
+    "op4": "d)double > char > int",
+    "ans": "Ans c . char has less bytes than int and int has less bytes than double in any system "
+  },
+  {
+    "question": "Que 41. What is (void*)0?",
+    "op1": "a)Representation of NULL pointer",
+    "op2": "b)Representation of void pointer",
+    "op3": "c)Error",
+    "op4": "d)None of above",
+    "ans": "Ans a . No answer description available for this question. "
+  },
+  {
+    "question": "Que 42. Which of the data types has the size that is variable?",
+    "op1": "a)int",
+    "op2": "b)struct",
+    "op3": "c)float",
+    "op4": "d)double",
+    "ans": "Ans b . Since the size of the structure depends on its fields, it has a variable size. "
+  },
+  {
+    "question": "Que 43. What will be the output of the program ?\n\n#include<stdio.h>\n\nint main()\n{\n    int i=3, *j, k;\n    j = &i;\n    printf(\"%d\\n\", i**j*i+*j);\n    return 0;\n}",
+    "op1": "a)30",
+    "op2": "b)27",
+    "op3": "c)9",
+    "op4": "d)3",
+    "ans": "Ans a . No answer description available for this question. "
+  },
+  {
+    "question": "Que 44. What occurs when a result has nowhere near the number of signiﬁcant digits indicated by its type.",
+    "op1": "a)domain",
+    "op2": "b)underflow",
+    "op3": "c)overflow",
+    "op4": "d)signiﬁcance loss",
+    "ans": "Ans d . A signiﬁcance loss occurs when a result has nowhere near the number of signiﬁcant digits indicated by its type. "
+  },
+  {
+    "question": "Que 45. What error occurs when a result is undeﬁned for a given argument value?",
+    "op1": "a)signiﬁcance loss",
+    "op2": "b)underflow",
+    "op3": "c)overflow",
+    "op4": "d)domain",
+    "ans": "Ans d . A domain error occurs when a result is undeﬁned for a given argument value. "
+  },
+  {
+    "question": "Que 46. What will be the output of the program ?\n\n#include<stdio.h>\n\nint main()\n{\n    char str[20] = \"Hello\";\n    char *const p=str;\n    *p='M';\n    printf(\"%s\\n\", str);\n    return 0;\n}",
+    "op1": "a)Mello",
+    "op2": "b)Hello",
+    "op3": "c)HMello",
+    "op4": "d)MHello",
+    "ans": "Ans a . No answer description available for this question. "
+  },
+  {
+    "question": "Que 47. __________ tells the compiler that this data is deﬁned somewhere and will be connected with the linker.",
+    "op1": "a)errno",
+    "op2": "b)extern",
+    "op3": "c)variable",
+    "op4": "d)yvals",
+    "ans": "Ans b . The C library macro extern int errno is set by system calls and some library functions in the event of an error to indicate if anything went wrong. "
+  },
+  {
+    "question": "Que 48. Point out the compile time error in the program given below.\n\n#include<stdio.h>\n\nint main()\n{\n    int *x;\n    *x=100;\n    return 0;\n}",
+    "op1": "a)Error: invalid assignment for x",
+    "op2": "b)Error: suspicious pointer conversion",
+    "op3": "c)No error",
+    "op4": "d)None of above",
+    "ans": "Ans c . While reading the code there is no error, but upon running the program having an unitialised variable can cause the program to crash (Null pointer assignment). "
+  },
+  {
+    "question": "Que 49. How many digits are present after decimal in float value?",
+    "op1": "a)1",
+    "op2": "b)3",
+    "op3": "c)6",
+    "op4": "d)16",
+    "ans": "Ans c . No answer description available for this question. "
+  },
+
+  {
+    "question": "Que 50. int main()\n{\nextern int i;\ni = 20;\nprintf(\"%d\", sizeof(i));\nreturn 0;\n}\n",
+    "op1": "a)20",
+    "op2": "b)0",
+    "op3": "c)Undefined reference to i",
+    "op4": "d)Linking Error",
+    "ans": "Ans c . extern int i; tell the compiler that int i is declared in some other file, in this code we have not included any other header file so it will cause compilation error."
+  },
+  {
+    "question": "Que 51. In C a pointer variable to an integer can be created by the decalaration",
+    "op1": "a)int p*;",
+    "op2": "b)int *p;",
+    "op3": "c)int +p;",
+    "op4": "d)int $p;",
+    "ans": "Ans b . No answer description available for this question\n\n;   "
+  },
+  {
+    "question": "Que 52. //This program is compiled on 32 bit DEV-C++ \nint main()\n{\n\nchar *ptr1, *ptr2;\nprintf(\"%d %d\", sizeof(ptr1), sizeof(ptr2));\n\nreturn 0;\n} ",
+    "op1": "a)1 1",
+    "op2": "b)2 22 2",
+    "op3": "c)4 4",
+    "op4": "d)Undefined",
+    "ans": "Ans c . On 32 compilers pointer's size is 4 bytes while on 64 bit compiler pointers size is 8 bytes. Note - If your computer is 64 bits then you can use both 32 bits and 64 bits compiler on it."
+  },
+  {
+    "question": "Que 53. A pointer variable can be",
+    "op1": "a)Passed to a function",
+    "op2": "b)Changed within a function",
+    "op3": "c)Returned by a function",
+    "op4": "d)Can be assigned an integer value",
+    "ans": "Ans c . No answer description available for this question\n\n"
+  },
+  {
+    "question": "Que 54. Which of the following is executed by Preprocess?",
+    "op1": "a)#include<stdio.h>",
+    "op2": "b)return 0",
+    "op3": "c)void main(int argc , char ** argv)",
+    "op4": "d)None of above",
+    "ans": "Ans a . statements starting with # symbol are always processed by pre-processor"
+  },
+  {
+    "question": "Que 55. The operators > and < are meaningful when used with pointers, if",
+    "op1": "a)the pointers point to data of similar type",
+    "op2": "b)the pointers point to structure of similar data type",
+    "op3": "c)the pointers point to elements of the same array",
+    "op4": "d)none of these",
+    "ans": "Ans c . No answer description available for this question\n\n  "
+  },
+  {
+    "question": "Que 56. What is the following is invalid header file in C?",
+    "op1": "a)math.h",
+    "op2": "b)mathio.h",
+    "op3": "c)string.h",
+    "op4": "d)ctype.h",
+    "ans": "Ans b . mathio.h is not a predefined header file. However we can create our own header files with any name."
+  },
+  {
+    "question": "Que 57. Can we declare function inside structure of C Programming?",
+    "op1": "a)Yes",
+    "op2": "b)No",
+    "op3": "c)Depends on Compiler",
+    "op4": "d)Yes but run time error",
+    "ans": "Ans b . C doesn't support but C++"
+  },
+  {
+    "question": "Que58. The ________ operator is true only when both the operands are true.",
+    "op1": "a)or",
+    "op2": "b)and",
+    "op3": "c)boolean",
+    "op4": "d)bitwiseor",
+    "ans": "Ans b . No answer description available for this question\n\n"
+  },
+  {
+    "question": "Que 59. ________ function is used to move the file position to desired location within the file.",
+    "op1": "a)fread",
+    "op2": "b)fwrite",
+    "op3": "c)fseek",
+    "op4": "d)fscanf",
+    "ans": "Ans c . No answer description available for this question\n\n"
+  },
+  {
+    "question": "Que 60. What is the extension of File produced by compiler on Windows?",
+    "op1": "a).exe",
+    "op2": "b) .a",
+    "op3": "c).out",
+    "op4": "d).obj",
+    "ans": "Ans a . On Windows OS output file produced by compiler has .exe extension which means executable file"
+  },
+  {
+    "question": "Que 61. Default output file produced by gcc compiler on Linux?",
+    "op1": "a).a",
+    "op2": "b)a.obj",
+    "op3": "c)a.exe",
+    "op4": "d)a.out",
+    "ans": "Ans d . By default GCC compiler produces a.out if name of output file is not specified."
+  },
+  {
+    "question": "Que 62. myarr[5] is equivalent of?",
+    "op1": "a)&(myarr + 5)",
+    "op2": "b)*(myarr + 5)",
+    "op3": "c)(*myarr + 5)",
+    "op4": "d)None of the above",
+    "ans": "Ans b . No answer description available for this question\n\n"
+  },
+  {
+    "question": "Que 63. What does .txt section contains?",
+    "op1": "a)What does .txt section contains?",
+    "op2": "b)Un-initialized Global Variables",
+    "op3": "c)Un-initialized Static Variables",
+    "op4": "d)Initialized Static & Global Variables",
+    "ans": "Ans a . Text area is a part of RAM which contains executabel instructions"
+  },
+  {
+    "question": "Que 64. int **ptr;",
+    "op1": "a)ptr is not a pointer",
+    "op2": "b)ptr is a pointer to pointer",
+    "op3": "c)Such statement no allowed in C",
+    "op4": "d)None of these",
+    "ans": "Ans b . ** means pointer to pointer"
+  },
+  {
+    "question": "Que 65. The Default Parameter Passing Mechanism is called as",
+    "op1": "a)Call by Value",
+    "op2": "b)Call by Reference",
+    "op3": "c)Call by Address",
+    "op4": "d)Call by Name",
+    "ans": "Ans a . No answer description available for this question\n\n"
+  },
+  {
+    "question": "Que 66. The statement printf(\"%c\", 100); will print?",
+    "op1": "a)prints 100",
+    "op2": "b)print garbage",
+    "op3": "c)prints ASCII equivalent of 100",
+    "op4": "d)None of the above",
+    "ans": "Ans c . No answer description available for this question\n\n"
+  },
+  {
+    "question": "Que 67. The statement print f (\"%d\", 10 ? 0 ? 5 : 1 : 12); will print?",
+    "op1": "a)10",
+    "op2": "b)0",
+    "op3": "c)12",
+    "op4": "d)1",
+    "ans": "Ans d .The Answer should be 1, Because the will return the value of condition and printf will print the output. 10?0?5:1:12 (here 10 is true)->0?5:1(Here 0 is false)-> 1 is output. "
+  },
+  {
+    "question": "Que 68. What will be the output of the following statement ?\nprintf(“%X%x%ci%x”,11,10,’s’,12);",
+    "op1": "a)error",
+    "op2": "b)basc",
+    "op3": "c)Bas94c",
+    "op4": "d)none of these",
+    "ans": "Ans b . No answer description available for this question\n\n"
+  },
+  {
+    "question": "Que 69. Which of the following cannot be checked in a switch-case statement?",
+    "op1": "a)Character\t",
+    "op2": "b)Integer\t",
+    "op3": "c)Float\t",
+    "op4": "d)enum",
+    "ans": "Ans c . No answer description available for this question\n\n"
+  },
+  {
+    "question": "Que 70. The correct way to round off a floating number x to an integer value is",
+    "op1": "a)y = int (x + 0.5)",
+    "op2": "b)y = (int) (x + 0.5)",
+    "op3": "c)y = (int) x + 0.5",
+    "op4": "d)y = (int) ((int)x + 0.5)",
+    "ans": "Ans b . No answer description available for this question\n\n"
+  },
+  {
+    "question": "Que 71. Which one is not a reserve keyword in C Language?",
+    "op1": "a)auto",
+    "op2": "b)main",
+    "op3": "c)case",
+    "op4": "d)register",
+    "ans": "Ans b .  No answer description available for this question\n\n"
+  },
+  {
+    "question": "Que 72. The largest element of an array index is called its",
+    "op1": "a)Lower bound",
+    "op2": "b)Upper bound",
+    "op3": "c)Range",
+    "op4": "d)All of the above",
+    "ans": "Ans b . No answer description available for this question\n\n    "
+  },
+  {
+    "question": "Que 73. What is the output of the following \"c\" program ?\n\n#include\nvoid main()\n{\nint i = 107, x = 5;\nprintf ((x > 7)? \"%d\" : \"%c:, i)\n}",
+    "op1": "a)an execution error ",
+    "op2": "b)a syntex error ",
+    "op3": "c)printing of k ",
+    "op4": "d)none of these ",
+    "ans": "Ans c . printf ((x > 7)? \"%d\" : \"%c:, i) x value assigned is 5 hence 5 is not greater than 7 so second condition i.e (%c:i)\n\n\n\nwill be executed means ascii value of small k is 107 so the character k will be printed. "
+  },
+  {
+    "question": "Que 74. Comment on the output of this C code?\n\nint main()\n{\nint a[5] = {1, 2, 3, 4, 5};\nint i;\nfor (i = 0; i < 5; i++)\nif ((char)a[i] == '5')\nprintf(\"%d\\n\", a[i]);\nelse\nprintf(\"FAIL\\n\");\n}",
+    "op1": "a)The compiler will flag an error",
+    "op2": "b)Program will compile and print the output 5",
+    "op3": "c)Program will compile and print the ASCII value of 5",
+    "op4": "d)Program will compile and print FAIL for 5 times",
+    "ans": "Ans d . The ASCII value of 5 is 53, the char type-casted integral value 5 is 5 only.\nOutput:\n$ cc pgm1.c\n$ a.out\nFAILED\nFAILED\nFAILED\nFAILED\nFAILED"
+  },
+  {
+    "question": "Que 75. What is the output of the following C Program?\n\n#include\nvoid main()\n{\nint a=4, b = 6;\nprintf (\"%d\", a==b);\n}",
+    "op1": "a)outputs an error message ",
+    "op2": "b)0",
+    "op3": "c)1 ",
+    "op4": "d)none of these",
+    "ans": "Ans b . printf (\"%d\", a==b);  It gives a boolean result i.e 1 for true and 0 for false. Since 4 is not equal to 6 hence output will be 0."
+  },
+  {
+    "question": "Que 76. The rule for implicit type conversion in 'C' is",
+    "op1": "a)int < unsigned < float < double ",
+    "op2": "b)unsigned < int < float < double ",
+    "op3": "c)int < unsigned < double < float ",
+    "op4": "d)unsigned < int < double < float ",
+    "ans": "Ans a . Generally takes place when in an expression more than one data type is present. In such condition type conversion (type promotion) takes place to avoid lose of data.\n\n\n\nAll the data types of the variables are upgraded to the data type of the variable with largest data type."
+  },
+  {
+    "question": "Que 78. Which data type is most suitable for storing a number 65000 in a 32-bit system?",
+    "op1": "a)short",
+    "op2": "b)int",
+    "op3": "c)long",
+    "op4": "d)double",
+    "ans": "Ans a . 65000 comes in the range of short (16-bit) which occupies the least memory."
+  },
+  {
+    "question": "Que 79. Integer division in a 'C' program results in",
+    "op1": "a)truncation ",
+    "op2": "b)rounding ",
+    "op3": "c)overflow",
+    "op4": "d)none of these ",
+    "ans": "Ans a . Its true answer is truncation. For example if we normally divide 3/2 we get 1.5\n\n\n\nBut in c language if we do integer division 3/2 we will only get 1 as the decimal values are removed by c compiler hence it truncates the value.    "
+  },
+  {
+    "question": "Que 80. Which of the following is a User-defined data type?",
+    "op1": "a)typedef int Boolean;",
+    "op2": "b)typedef enum {Mon, Tue, Wed, Thu, Fri} Workdays;",
+    "op3": "c)struct {char name[10], int age};",
+    "op4": "d)All of the mentioned",
+    "ans": "Ans d . typedef and struct are used to define user-defined data types."
+  },
+  {
+    "question": "Que 81. Which of the following operators in 'C' programming language takes only integer operands?",
+    "op1": "a)+",
+    "op2": "b)*",
+    "op3": "c)/",
+    "op4": "d)% ",
+    "ans": "Ans d . % is the answer cause it always takes both the inputs as integers in c language    "
+  },
+  {
+    "question": "Que 82. What is the output of this C code?\n\nint main()\n{\nchar chr;\nchr = 128;\nprintf(\"%d\\n\", chr);\nreturn 0;\n}",
+    "op1": "a)128",
+    "op2": "b)-128",
+    "op3": "c)Depends on the compiler",
+    "op4": "d)None of the mentioned",
+    "ans": "Ans b . signed char will be a negative number.\nOutput:\n$ cc pgm2.c\n$ a.out\n-128"
+  },
+  {
+    "question": "Que 83. What is the problem in the following declarations?\n\nint func(int);\ndouble func(int);\nint func(float);",
+    "op1": "a)A function with same name connot have different signatures. ",
+    "op2": "b)A function with same name cannot have different return types. ",
+    "op3": "c)A function with same name cannot have different number of parameters ",
+    "op4": "d)All of the mentioned. ",
+    "ans": "Ans d . A function with the same name cannot have different signatures.\n\n\n\n int func(int); double func(int);\n\n\n\nA function with the same name cannot have different return types. \n\n\n\ndouble func(int);\n\nint func(float);\n\n\n\n  A function with the same name cannot have a different number of parameters"
+  },
+  {
+    "question": "Que 84. The first and second arguments of fopen are?",
+    "op1": "a)A character string containing the name of the file & the second argument is the mode.",
+    "op2": "b)A character string containing the name of the user & the second argument is the mode.",
+    "op3": "c)A character string containing file poniter & the second argument is the mode.",
+    "op4": "d)None of the mentioned of the mentioned",
+    "ans": "Ans a . No answer description available for this question\n\n"
+  },
+
+  {
+    "question": "Que 85. What is the output of the following code?\n\ninclude \nvoid main()\n{\nint a=0, b=0;\na = (b =75)+9;\nprintf(\"\\n%d, %d \",a,b);\n}",
+    "op1": "a)75, 9 ",
+    "op2": "b)75, 84 ",
+    "op3": "c)84, 75 ",
+    "op4": "d)Compilation Error",
+    "ans": "Ans c . a = (b =75) 9;......b value is assigned to 75 so a value will become 75+9= 84.\n\n\n\nfinal value will become a=84 and b=75"
+  },
+  {
+    "question": "Que 86. For binary files, a ___ must be appended to the mode string.",
+    "op1": "a)Nothing",
+    "op2": "b)“b”",
+    "op3": "c)“binary”",
+    "op4": "d)“01”",
+    "ans": "Ans b . No answer description available for this question\n\n"
+  },
+  {
+    "question": "Que 87. What will be output of the following \"c\" code?\n\n#include\nvoid main()\n{\n100;\nprintf(\"%d\",100);\n}",
+    "op1": "a)Compilation Error ",
+    "op2": "b)100",
+    "op3": "c)1 ",
+    "op4": "d)None of these",
+    "ans": "Ans b . 100;  ...........there was no use of this 100. Its only to confuse the students.\n\nprintf(\"%d\",100);  ...... its as simple as to print hello world.  hence 100 is printed."
+  },
+  {
+    "question": "Que 88. What will be output of the following \"c\" code?\n\n#include\nvoid main()\n{\nint i=10;\ni=!i>14;\nprintf(\"%d\", i);\n}",
+    "op1": "a)0 ",
+    "op2": "b)10 ",
+    "op3": "c)1 ",
+    "op4": "d)Compilation Error ",
+    "ans": "Ans a . No answer description available for this question\n\n    "
+  },
+  {
+    "question": "Que 89. What is the meant by ‘a’ in the following operation?\nfp = fopen(“Random.txt”, “a”);",
+    "op1": "a)Attach",
+    "op2": "b)Append",
+    "op3": "c)Apprehend",
+    "op4": "d)Add",
+    "ans": "Ans b . No answer description available for this question\n\n "
+  },
+  {
+    "question": "Que 90. What will be output of the following \"c\" code?\n\n#include \nvoid main ( )\n{\nint i;\nfor( i=0; i<10; i++,printf(\"%d\", i));\n}",
+    "op1": "a)2345678910 ",
+    "op2": "b)123456789 ",
+    "op3": "c)Compilation Error",
+    "op4": "d)12345678910 ",
+    "ans": "Ans d . In a for loop, first the initialization part is checked, then the test condition. If the test condition is true then the body of the loop gets executed. Then, updation part is done, again the test condition is checked. If true then again the body gets executed, and this process goes on until the test condition becomes false.\n\nNow, let's dry run this particular code-\n\nValue of i                        Condition(i<10)                    Updation                        Status\n\ni=0                                    True                                       i=0+1=1                  1 gets printed\n\ni=1                                    True                                       i=1+1=2                  2 gets printed\n\ni=2                                    True                                       i=2+1=3                  3 gets printed\n\ni=3                                    True                                       i=3+1=4                  4 gets printed\n\ni=4                                    True                                       i=4+1=5                  5 gets printed\n\ni=5                                    True                                       i=5+1=6                  6 gets printed          \n\ni=6                                    True                                       i=6+1=7                  7 gets printed\n\ni=7                                    True                                       i=7+1=8                  8 gets printed\n\ni=8                                    True                                       i=8+1=9                  9 gets printed\n\ni=9                                    True                                       i=9+1=10                10 gets printed\n\ni=10                                  False                                            --                               --\n\nHence, the output will be 12345678910."
+  },
+  {
+    "question": "Que 91. Which of the following fopen statements are illegal?",
+    "op1": "a)fp = fopen(“abc.txt”, “r”);",
+    "op2": "b)fp = fopen(“/home/user1/abc.txt”, “w”);",
+    "op3": "c)fp = fopen(“abc”, “w”);",
+    "op4": "d)None of the mentioned.",
+    "ans": "Ans d . No answer description available for this question\n\n "
+  },
+  {
+    "question": "Que 92. What will be output of the following \"c\" code?\n\n#include \nvoid main ( )\n{\nint a=500, b=100,c;\nif( !(a>=400))\nb=200;\nc=200;\nprintf( \"%d %d\", b,c);\n}",
+    "op1": "a)200 100 ",
+    "op2": "b)100 200",
+    "op3": "c)200 200 ",
+    "op4": "d)Compilation Error ",
+    "ans": "Ans b . In line no 4, a and b are initialized with values 500 and 100 respectively.\n\nIn the next line, we have an if condition, let's try to analyze it-\n\na>=400, which is true as 500>400, so the result is 1, but !1 results to 0. So, the 'if' part now becomes something like if(0), which is false. So, the 'if' part is not executed, which means b is not updated to 200. b remains 100 as it was.\n\nc gets initialzed to 200.\n\nSo, the output will be 100 200.    "
+  },
+  {
+    "question": "Que 93. #include <stdio.h>\n\nint main()\n{\n    int i = 1, 2, 3;\n    \n    printf(\"%d\", i);\n    \n    return 0;\n}",
+    "op1": "a)1",
+    "op2": "b)3",
+    "op3": "c)Garbage value",
+    "op4": "d)Compile time error",
+    "ans": "Ans d . Comma acts as a separator here. The compiler creates an integer variable and initializes it with 1. The compiler fails to create integer variable 2 because 2 is not a valid identifier. "
+  },
+  {
+    "question": "Que 94. What will be output of the following \"c\" code?\n\n#include \nvoid main ( )\n{\nint i, m=2, n=3;\nfor( i=0;m+n=5; m++)\nprintf(\"%d %d\", m,n);\n}",
+    "op1": "a)Compilation Error",
+    "op2": "b) 2 3",
+    "op3": "c) 3 3 ",
+    "op4": "d) 2 3 3 3",
+    "ans": "Ans a . error: lvalue required as left operand of assignment    "
+  },
+  {
+    "question": "Que 95. What will be printed for the below statement?\n\n#include<stdio.h>\n\nmain()\n{\n   printf(\"%d\",strcmp(\"strcmp()\",\"strcmp()\"));\n}",
+    "op1": "a)0",
+    "op2": "b)-1",
+    "op3": "c)1",
+    "op4": "d)Invalid use of strcmp() function",
+    "ans": "Ans a . 0, strcmp return 0 if both the strings are equal "
+  },
+  {
+    "question": "Que 96. What is the output of the following program?\n\n#include<stdio.h>\n\nmain()\n{\t\n   int a[] = {10, 20, 30};\n   \n   printf(\"%d\", *a+1);\n}",
+    "op1": "a)10",
+    "op2": "b)20",
+    "op3": "c)11",
+    "op4": "d)21",
+    "ans": "Ans c . *a refers to 10 and adding a 1 to it gives 11.  "
+  },
+  {
+    "question": "Que 97. What is the output of the following statement?\n\n#include<stdio.h>\n\nmain()\n{ \n   printf(\"%d\", !0<2);\n}",
+    "op1": "a)0",
+    "op2": "b)1",
+    "op3": "c)false",
+    "op4": "d)true",
+    "ans": "Ans b . Priority of ! is greater than <. Relational operator returns 1 if relation between the expressions is true otherwise 0.  "
+  },
+  {
+    "question": "Que 98. Which standard library function can return a pointer to the last occurrence of a character in a string?",
+    "op1": "a)stchar()",
+    "op2": "b)strrchr()",
+    "op3": "c)strchar() & stchar()",
+    "op4": "d)strrchar()",
+    "ans": "Ans b . The strrchr() function finds string for the last occurrence of a character and place the pointer to the last occurrence of character.  "
+  },
+  {
+    "question": "Que 99. What will be output of the following \"c\" code?\n\n#include \nvoid main ()\n{\nint x =400, y;\ny = x*x+x;\nprintf (\"% d\", y);\n}",
+    "op1": "a)400 ",
+    "op2": "b)320000 ",
+    "op3": "c)Compilation Error ",
+    "op4": "d)160400",
+    "ans": "Ans d . In line 5-\n\ny=x*x+x\n\nor, y=400*400+400\n\nor, y=160000+400\n\nor, y=160400\n\nTherefore.  "
+  }, {
+  "question": "Que 100. What is the output of the following program?\n\nvoid main()\n{\nint x,y, z;\nx=2; y=1; z = 1;\nif(x > y + z)\nprintf(\"Hello!\\n\");\nelse if (x < y+ z)\nprintf (\"Hi!\\n\"); \nelse\nprintf(\"Hey!\\n\");\n}",
+  "op1": "a)Hi! ",
+  "op2": "b)Hey! ",
+  "op3": "c)Hello! ",
+  "op4": "d)None of these",
+  "ans": "Ans b . answer is option B\n\nx>y+Z \n\n2>1+1 = 2>2 false \n\nx<y+z 2<2 false\n\ncondition goes to else and prints Hey! "
+},
+  {
+    "question": "Que 101. What would be the output of the following C program ?\n\nvoid main() {\nint = 12345;\nfloat x = 145.678;\nprintf (\"%3d, %5d, %8d\", i,i,i,);\n} ",
+    "op1": "a)123 123 123 ",
+    "op2": "b)123,451,234,512,346 ",
+    "op3": "c)12345 ",
+    "op4": "d)123 ",
+    "ans": "Ans c . i not declared and in printf (,) is the extra is shows error\n\nassume if int i=12345;\n\nand all syntax is right then the answer will be \n\n12345,   12345,      12345\n\n "
+  },{
+  "question": "Que 102. Which library function can convert an unsigned long to a string?",
+  "op1": "a)ltoa() ",
+  "op2": "b)ultoa()",
+  "op3": "c)system() ",
+  "op4": "d)unsigned long can’t be converted to a string",
+  "ans": "Ans b . ultoa() - Convert an unsigned long integer into a string. "
+},{
+  "question": "Que 103. Find the output for the following C program\n\n#include \nint main()\n{ \nint x=2,y=6,z=6;\nx=y==z;\nprintf(\"%d\",x);\n}",
+  "op1": "a)3 ",
+  "op2": "b)0 ",
+  "op3": "c)None of these ",
+  "op4": "d)1 ",
+  "ans": "Ans d . In line no. 5-\n\nx=y==z;    Result is 1 as y==z is True, as 6==6.\n\n                 Then, 1 will be assigned to x\n\nHence, option D is correct. "
+},{
+  "question": "Que 104.  Find the output for the following C program\n\nvoid main\n{\nint x,j,k;\nj=k=6;x=2;\nx=j*k;\nprintf(\"%d\", x);\n}",
+  "op1": "a)2",
+  "op2": "b)36",
+  "op3": "c)6",
+  "op4": "d)None of the above ",
+  "ans": "Ans b . Here, j=6, k=6\n\nSo, x=j*k\n\nor, x=6*6;\n\nx=36\n\nHence, 36 is the output. "
+},{
+  "question": "Que 105. How many times below for loop will be executed ?\n#include<stdio.h>\nint main()\n{\n    int i=0;\n    for(;;)\n        printf(\"%d\",i);\n    return 0;\n}",
+  "op1": "a)Infinite times",
+  "op2": "b)1 times",
+  "op3": "c)0 times",
+  "op4": "d)10 times",
+  "ans": "Ans a . No answer description available for this question "
+},{
+  "question": "Que 106. What is the output of the following 'C' program ?\n\n#include\nint main()\n{\nint i = 10 ; \nprintf(\"%d\\n\", i/2 );\n\n}",
+  "op1": "a)10",
+  "op2": "b)5",
+  "op3": "c)error",
+  "op4": "d)warning ",
+  "ans": "Ans b . Clearly, value of i=10, and we are printing value of 'i/2'.\n\nHence, the output is 5. "
+},{
+  "question": "Que 107. What is the output of the following 'C' program ?\n\n#include\nint main()\n{\nchar c = 255; \nprintf (\"%d\",c);\nreturn 0;\n}",
+  "op1": "a)illegal character assignment ",
+  "op2": "b)prints -1 ",
+  "op3": "c)prints 2",
+  "op4": "d)prints 255 ",
+  "ans": "Ans b . 255 in binary can be represented as 11111111. What does this number represent?\n\nBefore that, we should know that char can store numbers only -128 to 127. The most significant bit is kept for the sign bit. Clearly, 11111111 represents a negative number. To check which number it represents we find the 2’s complement of it, which is 00000001, which is nothing but 1 in decimal.\n\nHence, 11111111 represents -1, which is the required output. "
+},{
+  "question": "Que 108. A pointer pointing to a memory location of the variable even after deletion of the variable is known as _____",
+  "op1": "a)far pointer",
+  "op2": "b)dangling pointer",
+  "op3": "c)null pointer",
+  "op4": "d)void pointer",
+  "ans": "Ans b . No answer description available for this question "
+},{
+  "question": "Que 109. Predict the output of following code:\n\n#include \nvoid main()\n{\nint a=b=c=d=10;\nprintf(\"%d,%d,%d,%d\",a,b,c,d);\n}",
+  "op1": "a)Error ",
+  "op2": "b)10,10,10,10 ",
+  "op3": "c)GV,GV,GV,10",
+  "op4": "d)GV,GV,GV,GV",
+  "ans": "Ans a . error: 'b' , 'c', 'd undeclared"
+},{
+  "question": "Que 110. What will be output of the following \"C\" code?\n\nmain()\n{\nint i=-1;\n-i;\nprintf(\"%d,%d\",i,-i);\n}",
+  "op1": "a) -1, 1",
+  "op2": "b) -1, -1 ",
+  "op3": "c) 1, 1 ",
+  "op4": "d) 0, 1",
+  "ans": "Ans a . No change in value of i "
+},{
+  "question": "Que 111. Find Error/Output in follwing code:\n\nint main ()\n\n{\n\n  int a[4] = { 25, 16 };\n\n  printf (\"%d %d\", a[0] & a[1], a[1] | a[2]);\n\n}",
+  "op1": "a)Syntax error because of invalid operator symbol",
+  "op2": "b)25 16",
+  "op3": "c)16 16",
+  "op4": "d)Syntax error because of invalid array initialization",
+  "ans": "Ans c . No answer description available for this question "
+},{
+  "question": "Que 112. What could be the output for following \"C\" code?\n\nmain()\n{\nint a= - - 2;\nprintf(\"%d\",a);\n}",
+  "op1": "a)2",
+  "op2": "b)-2",
+  "op3": "c)1",
+  "op4": "d)error",
+  "ans": "Ans a . Line 3 => int a= - - 2; can also be understood as int a= -(-2), which is a=2.\n\nHence, output is 2\n\nIf, it would have been something like int a= - - - 2, then it would have meant nothing but a=-(-(-2)), which is a=-2.\n\nHence, option A is correct."
+},{
+  "question": "Que 113. Which of the following is the correct order if calling functions in the below code?\na = f1(23, 14) * f2(12/4) + f3();",
+  "op1": "a)f1, f2, f3",
+  "op2": "b)f3, f2, f1",
+  "op3": "c)Order may vary from compiler to compiler",
+  "op4": "d)None of above",
+  "ans": "Ans c . Here, Multiplication will happen before the addition, but in which order the functions would be called is undefined. In an arithmetic expression the parenthesis tell the compiler which operands go with which operators but do not force the compiler to evaluate everything within the parenthesis first. "
+},{
+  "question": "Que 114. What is the output of this C code?\n\n#include \nint main()\n{\nshort int i;\nscanf(\"%hd\", &i);\nprintf(\"%hd\", i); return 0;\n}",
+  "op1": "a)Compilation error ",
+  "op2": "b)Undefined behavior ",
+  "op3": "c)Whatever user types ",
+  "op4": "d)None of these ",
+  "ans": "Ans c . The output would be whatever the user types, that should be within the range of short int.\n\nHere, '%hd' indicates  that the variable 'i' is  reading a short integer.\n\nSo, the '%hd' is necessary to write only 2 bytes instead of the 4 bytes that '%d' writes.\n\nHence, option C is correct "
+},{
+  "question": "Que 115. Assuming, integer is 2 byte, What will be the output of the program?\n\n#include<stdio.h>\n\nint main()\n{\n    printf(\"%x\\n\", -2<<2);\n    return 0;\n}",
+  "op1": "a)ffff",
+  "op2": "b)0  ",
+  "op3": "c)fff8",
+  "op4": "d)Error",
+  "ans": "Ans c . The integer value 2 is represented as 00000000 00000010 in binary system. \n\nNegative numbers are represented in 2's complement method. \n\n1's complement of 00000000 00000010 is 11111111 11111101 (Change all 0s to 1 and 1s to 0). \n\n2's complement of 00000000 00000010 is 11111111 11111110 (Add 1 to 1's complement to obtain the 2's complement value). \n\nTherefore, in binary we represent -2 as: 11111111 11111110. \n\nAfter left shifting it by 2 bits we obtain: 11111111 11111000, and it is equal to \"fff8\" in hexadecimal system. "
+},{
+  "question": "Que 116. A pointer that is pointing to NOTHING is called ____",
+  "op1": "a)VOID Pointer",
+  "op2": "b)DANGLING Pointer",
+  "op3": "c)NULL Pointer",
+  "op4": "d)WILD Pointer",
+  "ans": "Ans c  No answer description available for this question"
+},{
+  "question": "Que 117. What will be the output of the program?\n\n#include<stdio.h>\nint main()\n{\n    int x=4, y, z;\n    y = --x;\n    z = x--;\n    printf(\"%d, %d, %d\\n\", x, y, z);\n    return 0;\n}",
+  "op1": "a)4, 3, 3",
+  "op2": "b)4, 3, 2",
+  "op3": "c)3, 3, 2",
+  "op4": "d)2, 3, 3",
+  "ans": "Ans d . Step 1: int x=4, y, z; here variable x, y, z are declared as an integer type and variable x is initialized to 4.\nStep 2: y = --x; becomes y = 3; because (--x) is pre-decrement operator.\nStep 3: z = x--; becomes z = 3;. In the next step variable x becomes 2, because (x--) is post-decrement operator. \nStep 4: printf(\"%d, %d, %d\\n\", x, y, z); Hence it prints \"2, 3, 3\". "
+},{
+  "question": "Que 118. An uninitialized pointer in C is called ___",
+  "op1": "a)Constructor",
+  "op2": "b)dangling pointer",
+  "op3": "c)Wild Pointer",
+  "op4": "d)Destructor",
+  "ans": "Ans c . No answer description available for this question "
+},{
+  "question": "Que 119. What will be the output of the program?\n\n#include<stdio.h>\nint main()\n{\n    int i=3;\n    i = i++;\n    printf(\"%d\\n\", i);\n    return 0;\n}",
+  "op1": "a)3",
+  "op2": "b)4",
+  "op3": "c)5",
+  "op4": "d)6",
+  "ans": "Ans b . No answer description available for this question"
+},{
+  "question": "Que 120. #include\nint main() {\nint i,j;\nj = 10;\ni = j++ - j++;\nprintf(\"%d %d\", i,j);\nreturn 0;\n}",
+  "op1": "a)0 12 ",
+  "op2": "b)12 12 ",
+  "op3": "c)0 0 ",
+  "op4": "d)12 0 ",
+  "ans": "Ans a . 4th line of the program says j=10 . 5th line says j means post increment so after that line is executed j value will become 11 but during the execution of the 5th line j value is still 10 so i= 10-10=0\n\n\n\nNow in the 5th line itself there has been two times increment of j so final value will be 12. "
+}
+]
